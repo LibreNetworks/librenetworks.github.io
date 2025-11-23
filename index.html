@@ -3,129 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Libre Networks – Keep the Web Free</title>
+  <title>Libre Networks – Open Source for a Freer Web</title>
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
-  <meta name="description" content="Libre Networks Petition – Stand for open, free, and accessible internet for everyone." />
+  <meta name="description" content="Libre Networks – A community-driven open source group building tools for privacy, freedom, and resilient media access." />
 </head>
 <body>
+
   <header class="hero">
     <img src="assets/logo.png" alt="Libre Networks Logo" class="logo" />
     <h1>Libre Networks</h1>
-    <p class="tagline">Keeping the Web Free.</p>
+    <p class="tagline">Open Source. Open Web. Open Future.</p>
   </header>
 
+  <!-- ABOUT -->
   <section class="mission">
-    <h2>Our Mission</h2>
+    <h2>Who We Are</h2>
     <p>
-      Libre Networks is a community-driven movement defending the open internet.<br>
-      Around the world, websites and governments are increasingly restricting access—requiring IDs, deploying age-check AI, and limiting freedom. This approach is flawed and puts privacy, safety, and universal access at risk.<br>
-      Major organizations like Wikipedia, 4chan, and Apple have challenged these restrictions in court, fighting for a safer, freer web.<br>
-      <strong>Now, we’re asking you to stand with us.</strong>
+      Libre Networks is a volunteer-driven open source group focused on building tools,
+      standards, and infrastructure that promote an open and free internet.<br><br>
+      We believe technology should empower individuals—not restrict them. Our work spans
+      media servers, networking tools, privacy-focused utilities, and documentation that
+      helps people understand and control their digital environments.
     </p>
   </section>
 
-  <section class="petition">
-    <h2>Sign the Petition: Defend the Open Internet</h2>
-    <p>
-      We believe the web should be:
-      <ul>
-        <li><strong>Accessible:</strong> No unnecessary barriers, ID checks, or invasive surveillance.</li>
-        <li><strong>Private:</strong> Your browsing, identity, and conversations stay yours.</li>
-        <li><strong>Open:</strong> No government or corporation should decide who gets to connect.</li>
-      </ul>
-      <br>
-      <strong>Sign our petition to demand:</strong>
-      <ol>
-        <li>Protection against mandatory age or ID verification for general web use.</li>
-        <li>Safeguards against AI-based surveillance and censorship.</li>
-        <li>Transparent, community-driven standards for online safety and privacy.</li>
-      </ol>
-      <br>
-      Every signature sends a message to lawmakers, companies, and the world: <em>keep the internet free and open for all.</em>
-    </p>
-    <form class="petition-form" action="https://formspree.io/f/mwpaeygg" method="POST">
-      <label for="name">Name (or alias):</label>
-      <input type="text" id="name" name="name" required />
-      <label for="email">Email (optional):</label>
-      <input type="email" id="email" name="email" />
-      <button type="submit" class="button">Sign the Petition</button>
-    </form>
-    <p class="note">Your data is never sold or shared. We only use signatures to demonstrate support for internet freedom.</p>
-  </section>
-
-  <section class="why">
-    <h2>Why This Matters</h2>
-    <p>
-      The web was built to connect people freely, not gatekeep or monitor. Forced ID checks and age AI threaten:
-      <ul>
-        <li>Access for marginalized users, privacy advocates, and those in restrictive countries.</li>
-        <li>Whistleblowers, activists, and regular people who just want safety and privacy.</li>
-        <li>The free flow of information and ideas that drives progress.</li>
-      </ul>
-    </p>
-  </section>
-
-  <!--<section class="statements">
-    <h2>Voices from the Community</h2>
-    <blockquote>
-      "No one should have to show an ID to read, learn, or participate online. The web is for everyone." <br>
-      <cite>– Amina, digital rights volunteer</cite>
-    </blockquote>
-    <blockquote>
-      "Open networks empower education and freedom. Let’s keep them open for the next generation." <br>
-      <cite>– Jay, mesh network developer</cite>
-    </blockquote>
-    <blockquote>
-      "The moment we normalize ID checks, we lose something essential about the internet." <br>
-      <cite>– Sasha, student</cite>
-    </blockquote>
-  </section>
-
+  <!-- PROJECTS -->
   <section class="projects">
-    <h2>What We Do</h2>
-    <ul>
-      <li><strong>Open Infrastructure:</strong> Creating and sharing free networking tools—no closed code, no hidden locks.</li>
-      <li><strong>Mesh Networks:</strong> Supporting local, peer-to-peer connectivity that can’t be shut down or censored.</li>
-      <li><strong>Digital Literacy:</strong> Teaching privacy skills, digital rights, and the value of an open web.</li>
-      <li><strong>Advocacy:</strong> Engaging lawmakers and tech leaders with real stories, signatures, and evidence.</li>
-    </ul>
-    <a href="https://github.com/librenetworks" class="button">Explore Our Projects</a>
-  </section>-->
+    <h2>Featured Project: Amps</h2>
+    <p>
+      <strong>Amps</strong> is our flagship open-source streaming tool: a modular, FFmpeg-powered
+      server that dynamically generates M3U playlists, relays or transcodes content, and exposes
+      everything through a clean Flask API.
+    </p>
 
+    <ul>
+      <li><strong>Dynamic M3U Playlists</strong> with metadata, groups, and channel details.</li>
+      <li><strong>FFmpeg Engine</strong> for relay or transcoding.</li>
+      <li><strong>HLS, LL-HLS & DASH outputs</strong> served automatically.</li>
+      <li><strong>yt-dlp integration</strong> for complex streaming sources.</li>
+      <li><strong>REST API</strong> for managing streams on the fly.</li>
+      <li><strong>Adaptive bitrates</strong> for mobile + low-bandwidth clients.</li>
+      <li><strong>Region filtering</strong> for flexible access control.</li>
+      <li><strong>Docker support</strong> for easy deployment.</li>
+      <li><strong>Apache 2.0 licensed</strong> and fully open source.</li>
+    </ul>
+
+    <div style="margin-top: 15px;">
+      <a href="https://calmhostacct.github.io/amps" class="button">Amps Website</a>
+      <a href="https://github.com/calmhostacct/amps" class="button">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- OTHER PROJECTS -->
+  <section class="other-projects">
+    <h2>Other Open Source Work Coming Soon</h2>
+    <ul>
+      <li><strong>Libre Utils:</strong> Tiny command-line tools for encryption, networking, and diagnostics.</li>
+      <li><strong>Open Mesh Docs:</strong> Guides for building resilient peer-to-peer mesh networks.</li>
+      <li><strong>Libre API:</strong> In-progress lightweight toolkit for self-hosted applications.</li>
+    </ul>
+  </section>
+
+  <!-- GET INVOLVED -->
   <section class="get-involved">
     <h2>Get Involved</h2>
+    <p>Libre Networks is completely open source and community-driven.</p>
     <ul>
-      <li>Share our petition on social media and with friends.</li>
-      <li>Host an open-internet event or discussion in your community.</li>
-      <li>Contribute code or ideas to our open-source tools.</li>
-      <li>Translate this site and campaign into your language.</li>
-      <!--<li>Reach out: <a href="mailto:contact@librenetworks.org">contact@librenetworks.org</a></li>-->
+      <li>Contribute to our GitHub repositories.</li>
+      <li>Help improve documentation or write tutorials.</li>
+      <li>Translate our projects into other languages.</li>
+      <li>Join discussions, propose features, or build your own tools on top of ours.</li>
     </ul>
+
+    <p style="margin-top: 10px;">
+      Visit our GitHub organization:<br>
+      <a href="https://github.com/librenetworks" class="button">Libre Networks GitHub</a>
+    </p>
   </section>
 
+  <!-- FAQ -->
   <section class="faq">
     <h2>FAQ</h2>
     <details>
-      <summary>Why is age/ID verification a problem?</summary>
-      <p>While safety is important, blanket ID checks and AI age scans erode privacy and risk excluding many legitimate users—especially young people, activists, or those without easy access to official documents.</p>
+      <summary>Is everything you make open source?</summary>
+      <p>Yes. All our tools—including Amps—are licensed under open source licenses such as Apache-2.0.</p>
     </details>
     <details>
-      <summary>What happens with my signature?</summary>
-      <p>We use signatures to demonstrate public opposition to restrictive laws and policies. No personal information is shared without consent.</p>
+      <summary>Can I contribute even if I’m new?</summary>
+      <p>Absolutely. Many issues are beginner-friendly, and documentation help is always welcome.</p>
     </details>
     <details>
-      <summary>How can I help?</summary>
-      <p>Sign, share, contribute code, organize, translate, or reach out! Every voice counts.</p>
+      <summary>How do I start contributing?</summary>
+      <p>Check the GitHub issues page for “good-first-issue” tags or join our discussions.</p>
     </details>
   </section>
 
   <footer>
-    <p>© <span id="year"></span> Libre Networks · <a href="https://librenetworks.org">librenetworks.org</a></p>
+    <p>© <span id="year"></span> Libre Networks · Open Source for Everyone</p>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
