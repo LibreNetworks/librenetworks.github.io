@@ -2,103 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Libre Networks – Open Source for a Freer Web</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Libre Networks – Open source for the MOFH community.</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="icon" type="image/png" href="assets/logo.png" />
-  <meta name="description" content="Libre Networks – A community-driven open source group building tools for privacy, freedom, and resilient media access." />
+  <meta name="description" content="Libre Networks – Open-source tools for the MyOwnFreeHost ecosystem." />
+
+  <style>
+    body {
+      background: #ffffff;
+    }
+    .logo {
+      width: 90px;
+    }
+    .hero {
+      padding: 60px 0;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 30px 0;
+      border-top: 1px solid #e5e5e5;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="hero">
-    <img src="assets/logo.png" alt="Libre Networks Logo" class="logo" />
-    <h1>Libre Networks</h1>
-    <p class="tagline">Open Source. Open Web. Open Future.</p>
+  <!-- HERO -->
+  <header class="hero text-center">
+    <img src="assets/logo.png" alt="Libre Networks Logo" class="logo mb-3">
+    <h1 class="fw-bold">Libre Networks</h1>
+    <p class="lead">Open Source Tools for the MOFH Ecosystem</p>
   </header>
 
   <!-- ABOUT -->
-  <section class="mission">
-    <h2>Who We Are</h2>
+  <section class="container py-4">
+    <h2 class="mb-3">Who We Are</h2>
     <p>
-      Libre Networks is a volunteer-driven open source group focused on building tools,
-      standards, and infrastructure that promote an open and free internet.<br><br>
-      We believe technology should empower individuals—not restrict them. Our work spans
-      media servers, networking tools, privacy-focused utilities, and documentation that
-      helps people understand and control their digital environments.
+      Libre Networks is a volunteer-driven open-source group building tools and libraries
+      designed to improve and extend the capabilities of the MyOwnFreeHost (MOFH) platform.
+      Our projects support developers by offering clean abstractions, API wrappers,
+      modules, and utilities for both backend and frontend integration.
     </p>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="projects">
-    <h2>Featured Project: Amps</h2>
-    <p>
-      <strong>Amps</strong> is our flagship open-source streaming tool: a modular, FFmpeg-powered
-      server that dynamically generates M3U playlists, relays or transcodes content, and exposes
-      everything through a clean Flask API.
-    </p>
+  <!-- FEATURED PROJECT -->
+  <section class="container py-4">
+    <h2 class="mb-3">Featured Project</h2>
 
-    <ul>
-      <li><strong>Dynamic M3U Playlists</strong> with metadata, groups, and channel details.</li>
-      <li><strong>FFmpeg Engine</strong> for relay or transcoding.</li>
-      <li><strong>HLS, LL-HLS & DASH outputs</strong> served automatically.</li>
-      <li><strong>yt-dlp integration</strong> for complex streaming sources.</li>
-      <li><strong>REST API</strong> for managing streams on the fly.</li>
-      <li><strong>Adaptive bitrates</strong> for mobile + low-bandwidth clients.</li>
-      <li><strong>Region filtering</strong> for flexible access control.</li>
-      <li><strong>Docker support</strong> for easy deployment.</li>
-      <li><strong>Apache 2.0 licensed</strong> and fully open source.</li>
-    </ul>
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h3 class="h5">mofh-fossbilling-module</h3>
+        <p class="mb-2">
+          An unofficial FOSSBilling module that seamlessly integrates MyOwnFreeHost account
+          provisioning, domain management, and automation directly into FOSSBilling.
+        </p>
 
-    <div style="margin-top: 15px;">
-      <a href="https://librenetworks.github.io/amps" class="button">Amps Website</a>
-      <a href="https://github.com/LibreNetworks/amps" class="button">View on GitHub</a>
+        <ul>
+          <li>Fully open-source (Apache 2.0)</li>
+          <li>Automated account creation for MOFH</li>
+          <li>API-driven integration</li>
+          <li>Simple to install and extend</li>
+        </ul>
+
+        <a href="https://github.com/LibreNetworks/mofh-fossbilling-module" class="btn btn-dark mt-2">View on GitHub</a>
+      </div>
     </div>
   </section>
 
   <!-- OTHER PROJECTS -->
-  <section class="other-projects">
-    <h2>Other Open Source Work Coming Soon</h2>
-    <ul>
-      <li><strong>Libre Utils:</strong> Tiny command-line tools for encryption, networking, and diagnostics.</li>
-      <li><strong>Open Mesh Docs:</strong> Guides for building resilient peer-to-peer mesh networks.</li>
-      <li><strong>Libre API:</strong> In-progress lightweight toolkit for self-hosted applications.</li>
-    </ul>
+  <section class="container py-5">
+    <h2 class="mb-3">Other MOFH Open Source Projects</h2>
+
+    <div class="row g-4">
+
+      <!-- Project Card -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">mofh-vp-api-wrapper</h5>
+            <p>PHP client for interacting with MOFH's VistaPanel API.</p>
+            <a href="https://github.com/LibreNetworks/mofh-vp-api-wrapper" class="btn btn-outline-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">mofh-javascript</h5>
+            <p>Lightweight JavaScript library for VistaPanel-based integrations.</p>
+            <a href="https://github.com/LibreNetworks/mofh-javascript" class="btn btn-outline-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">mofh-api-simu</h5>
+            <p>Python-based simulation of the MOFH API for testing and development.</p>
+            <a href="https://github.com/LibreNetworks/mofh-api-simu" class="btn btn-outline-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">mofh-cli</h5>
+            <p>A lightweight Python CLI tool for interacting with MyOwnFreeHost systems.</p>
+            <a href="https://github.com/LibreNetworks/mofh-cli" class="btn btn-outline-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- GET INVOLVED -->
-  <section class="get-involved">
-    <h2>Get Involved</h2>
-    <p>Libre Networks is completely open source and community-driven.</p>
-    <ul>
-      <li>Contribute to our GitHub repositories.</li>
-      <li>Help improve documentation or write tutorials.</li>
-      <li>Translate our projects into other languages.</li>
-      <li>Join discussions, propose features, or build your own tools on top of ours.</li>
-    </ul>
-
-    <p style="margin-top: 10px;">
-      Visit our GitHub organization:<br>
-      <a href="https://github.com/librenetworks" class="button">Libre Networks GitHub</a>
+  <section class="container py-5">
+    <h2 class="mb-3">Get Involved</h2>
+    <p>
+      All of our work is fully open source. Developers of any experience level are welcome.
+      You can contribute code, write documentation, file issues, or help test tools.
     </p>
+
+    <a href="https://github.com/LibreNetworks" class="btn btn-dark">Libre Networks on GitHub</a>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq">
-    <h2>FAQ</h2>
-    <details>
-      <summary>Is everything you make open source?</summary>
-      <p>Yes. All our tools—including Amps—are licensed under open source licenses such as Apache-2.0.</p>
-    </details>
-    <details>
-      <summary>Can I contribute even if I’m new?</summary>
-      <p>Absolutely. Many issues are beginner-friendly, and documentation help is always welcome.</p>
-    </details>
-    <details>
-      <summary>How do I start contributing?</summary>
-      <p>Check the GitHub issues page for “good-first-issue” tags or join our discussions.</p>
-    </details>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
     <p>© <span id="year"></span> Libre Networks · Open Source for Everyone</p>
   </footer>
@@ -106,6 +143,8 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
